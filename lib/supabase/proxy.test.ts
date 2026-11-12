@@ -11,8 +11,8 @@ vi.mock("@supabase/ssr", () => ({
 const { updateSession } = await import("./proxy");
 
 describe("updateSession (unauthenticated)", () => {
-  it("does not redirect /test", async () => {
-    const res = await updateSession(new NextRequest("http://localhost/test"));
+  it("does not redirect /api/test", async () => {
+    const res = await updateSession(new NextRequest("http://localhost/api/test"));
     expect(res.headers.get("location")).toBeNull();
   });
 

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { GET } from "./route";
 
-describe("GET /test", () => {
+describe("GET /api/test", () => {
   it("returns 200 with JSON containing exactly firstName and lastName", async () => {
     const res = GET();
 
