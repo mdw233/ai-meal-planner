@@ -69,6 +69,17 @@ When asked to implement an issue:
 - Do not claim completion if a required step failed.
 - If GitHub access is unavailable, stop and report it.
 
+## Engineering rules
+
+- Prefer simple solutions over abstractions.
+- Keep business logic separate from UI.
+- Use Zod for input validation.
+- Authenticate and authorize server mutations.
+- Add tests for meaningful new behavior.
+- Use migrations for schema changes.
+- Never expose Supabase secret keys to clients.
+- Use RLS for user-owned data.
+
 ## GitHub CLI
 
 Use `gh issue view` to read issues.
